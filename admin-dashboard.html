@@ -1,0 +1,150 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | Smart Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">📚 Smart Library</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="student-dashboard.html">Student</a>
+        <a href="login.html">Logout</a>
+    </nav>
+</header>
+
+<main class="dashboard-page">
+
+    <section class="dashboard-header">
+        <p class="section-label">ADMIN DASHBOARD</p>
+
+        <h1>Welcome, Library Admin 👋</h1>
+
+        <p>
+            Manage books, students and library activities
+            from one place.
+        </p>
+    </section>
+
+    <section class="dashboard-stats">
+
+        <div class="dashboard-card">
+            <div class="dashboard-icon">📚</div>
+            <h3>Total Books</h3>
+            <strong>250</strong>
+            <p>Books in library</p>
+        </div>
+
+        <div class="dashboard-card">
+            <div class="dashboard-icon">👨‍🎓</div>
+            <h3>Total Students</h3>
+            <strong>120</strong>
+            <p>Registered students</p>
+        </div>
+
+        <div class="dashboard-card">
+            <div class="dashboard-icon">🔖</div>
+            <h3>Reservations</h3>
+            <strong>18</strong>
+            <p>Active reservations</p>
+        </div>
+
+        <div class="dashboard-card">
+            <div class="dashboard-icon">⚠️</div>
+            <h3>Pending Fines</h3>
+            <strong>₹1,250</strong>
+            <p>Total pending fines</p>
+        </div>
+
+    </section>
+
+    <section class="admin-section">
+
+        <div class="section-title">
+            <p>LIBRARY MANAGEMENT</p>
+            <h2>Quick Actions</h2>
+        </div>
+
+        <div class="admin-actions">
+
+            <div class="admin-action">
+                <div>📚</div>
+                <h3>Manage Books</h3>
+                <p>Add, update and remove books.</p>
+                <button onclick="adminMessage('Manage Books')">
+                    Open
+                </button>
+            </div>
+
+            <div class="admin-action">
+                <div>👥</div>
+                <h3>Manage Users</h3>
+                <p>View and manage student accounts.</p>
+                <button onclick="adminMessage('Manage Users')">
+                    Open
+                </button>
+            </div>
+
+            <div class="admin-action">
+                <div>🔄</div>
+                <h3>Issue / Return</h3>
+                <p>Manage book issue and return activities.</p>
+                <button onclick="adminMessage('Issue / Return')">
+                    Open
+                </button>
+            </div>
+
+            <div class="admin-action">
+                <div>🔖</div>
+                <h3>Reservations</h3>
+                <p>View active book reservations.</p>
+                <button onclick="adminMessage('Reservations')">
+                    Open
+                </button>
+            </div>
+
+            <div class="admin-action">
+                <div>💰</div>
+                <h3>Fines</h3>
+                <p>Track pending and collected fines.</p>
+                <button onclick="adminMessage('Fines')">
+                    Open
+                </button>
+            </div>
+
+            <div class="admin-action">
+                <div>📊</div>
+                <h3>Statistics</h3>
+                <p>View library activity statistics.</p>
+                <button onclick="adminMessage('Statistics')">
+                    Open
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 Smart Library Management System</p>
+    <p>Version Control using Git and GitHub</p>
+</footer>
+
+<script>
+function adminMessage(section) {
+    alert(section + " section opened successfully!");
+}
+</script>
+
+</body>
+</html>
+```

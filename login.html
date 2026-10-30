@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Smart Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">📚 Smart Library</div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="index.html#features">Features</a>
+            <a href="index.html#about">About</a>
+        </nav>
+    </header>
+
+    <main class="login-page">
+
+        <div class="login-container">
+
+            <div class="login-intro">
+                <p class="welcome">SMART LIBRARY</p>
+
+                <h1>Welcome<br>
+                    <span>Back.</span>
+                </h1>
+
+                <p>
+                    Sign in to access your library dashboard,
+                    manage books and explore your digital library.
+                </p>
+
+                <div class="login-highlights">
+                    <div>📚 Easy Book Search</div>
+                    <div>🔖 Quick Reservations</div>
+                    <div>🔔 Smart Notifications</div>
+                </div>
+            </div>
+
+            <div class="login-card">
+
+                <div class="login-card-header">
+                    <h2>Sign In</h2>
+                    <p>Enter your details to continue</p>
+                </div>
+
+                <form id="loginForm">
+
+                    <label for="role">Login As</label>
+
+                    <select id="role" required>
+                        <option value="">Select Role</option>
+                        <option value="student">Student</option>
+                        <option value="admin">Library Admin</option>
+                    </select>
+
+                    <label for="email">Email Address</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Enter your email"
+                        required
+                    >
+
+                    <label for="password">Password</label>
+
+                    <div class="password-box">
+                        <input
+                            type="password"
+                            id="password"
+                            placeholder="Enter your password"
+                            required
+                        >
+
+                        <button type="button" id="togglePassword">
+                            👁️
+                        </button>
+                    </div>
+
+                    <div class="login-options">
+                        <label class="remember">
+                            <input type="checkbox">
+                            Remember me
+                        </label>
+
+                        <a href="#">Forgot Password?</a>
+                    </div>
+
+                    <button type="submit" class="login-submit">
+                        Sign In →
+                    </button>
+
+                </form>
+
+                <p class="demo-note">
+                    Demo system — no real account required.
+                </p>
+
+                <a href="index.html" class="back-home">
+                    ← Back to Home
+                </a>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Smart Library Management System</p>
+        <p>Version Control using Git and GitHub</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

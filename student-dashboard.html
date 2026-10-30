@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard | Smart Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">📚 Smart Library</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="login.html">Logout</a>
+    </nav>
+</header>
+
+<main class="dashboard-page">
+
+    <div class="dashboard-header">
+        <div>
+            <p class="section-label">STUDENT DASHBOARD</p>
+            <h1>Welcome, Student 👋</h1>
+            <p>Manage your books and library activities in one place.</p>
+        </div>
+
+        <div class="dashboard-date">
+            📅 <span id="todayDate"></span>
+        </div>
+    </div>
+
+    <div class="dashboard-cards">
+
+        <div class="dashboard-card">
+            <div class="dashboard-icon">📚</div>
+            <h3>My Books</h3>
+            <strong>3</strong>
+            <p>Currently issued</p>
+        </div>
+
+        <div class="dashboard-card">
+            <div class="dashboard-icon">🔖</div>
+            <h3>Reservations</h3>
+            <strong>2</strong>
+            <p>Active reservations</p>
+        </div>
+
+        <div class="dashboard-card">
+            <div class="dashboard-icon">📅</div>
+            <h3>Due Soon</h3>
+            <strong>1</strong>
+            <p>Book due this week</p>
+        </div>
+
+        <div class="dashboard-card">
+            <div class="dashboard-icon">🔔</div>
+            <h3>Notifications</h3>
+            <strong>4</strong>
+            <p>New updates</p>
+        </div>
+
+    </div>
+
+    <section class="dashboard-section">
+
+        <div class="section-heading">
+            <div>
+                <p class="section-label">LIBRARY COLLECTION</p>
+                <h2>Popular Books</h2>
+            </div>
+
+            <input
+                type="text"
+                id="bookSearch"
+                placeholder="🔎 Search books..."
+            >
+        </div>
+
+        <div class="book-grid" id="bookGrid">
+
+            <div class="book-card">
+                <div class="book-cover">📘</div>
+                <h3>Clean Code</h3>
+                <p>Robert C. Martin</p>
+                <span class="available">Available</span>
+                <button onclick="reserveBook('Clean Code')">
+                    Reserve Book
+                </button>
+            </div>
+
+            <div class="book-card">
+                <div class="book-cover">📕</div>
+                <h3>Introduction to Algorithms</h3>
+                <p>Thomas H. Cormen</p>
+                <span class="available">Available</span>
+                <button onclick="reserveBook('Introduction to Algorithms')">
+                    Reserve Book
+                </button>
+            </div>
+
+            <div class="book-card">
+                <div class="book-cover">📗</div>
+                <h3>JavaScript Guide</h3>
+                <p>David Flanagan</p>
+                <span class="available">Available</span>
+                <button onclick="reserveBook('JavaScript Guide')">
+                    Reserve Book
+                </button>
+            </div>
+
+            <div class="book-card">
+                <div class="book-cover">📙</div>
+                <h3>Python Programming</h3>
+                <p>Mark Lutz</p>
+                <span class="available">Available</span>
+                <button onclick="reserveBook('Python Programming')">
+                    Reserve Book
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="dashboard-section">
+
+        <div class="section-heading">
+            <div>
+                <p class="section-label">MY LIBRARY</p>
+                <h2>Recently Issued Books</h2>
+            </div>
+        </div>
+
+        <div class="table-container">
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Book</th>
+                        <th>Issued Date</th>
+                        <th>Due Date</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Computer Networks</td>
+                        <td>20 Oct 2026</td>
+                        <td>03 Nov 2026</td>
+                        <td><span class="status-active">Active</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>Operating Systems</td>
+                        <td>18 Oct 2026</td>
+                        <td>01 Nov 2026</td>
+                        <td><span class="status-warning">Due Soon</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>Database Systems</td>
+                        <td>10 Oct 2026</td>
+                        <td>24 Oct 2026</td>
+                        <td><span class="status-returned">Returned</span></td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 Smart Library Management System</p>
+    <p>Version Control using Git and GitHub</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
